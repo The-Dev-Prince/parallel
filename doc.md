@@ -1,6 +1,6 @@
 # THE PLAN
 ## assignments
-| Name | task | Notes | Status |
+| Name | task     | Notes | Status |
 |--------|---------|-------|--------|
 | Aedin  |         |       |        |
 | Avyrie   |         |       |        |
