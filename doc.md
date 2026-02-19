@@ -1,4 +1,8 @@
 # THE PLAN
+## timeline
+### Tasks
+1.
+
 ## Assignments
 Below contains current assignment chart of collaborators.
 ### Current assignments
