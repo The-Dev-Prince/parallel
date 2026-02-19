@@ -1,13 +1,14 @@
 # THE PLAN
 ## timeline
 ### Tasks
-1. Split words by spaces and punctuation - Avyrie
-2. Word count - Dillon
-3. Parallel merge
-4. Regular merge
-5. Time comparison
-6. Print original text
-7. Print sorted text
+1. Create array
+2. Split words by spaces and punctuation - Avyrie
+3. Word count - Dillon
+4. Parallel merge
+5. Regular merge
+6. Time comparison
+7. Print original text
+8. Print sorted text
 
 ### Original assignments
 ## Assignments
