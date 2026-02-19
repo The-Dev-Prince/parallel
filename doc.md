@@ -2,6 +2,9 @@
 ## assignments
 | Name | task | Notes | Status |
 |--------|---------|-------|--------|
-| Login  |         |       |        |
-| API    |         |       |        |
-| Tests  |         |       |        |
+| Aedin  |         |       |        |
+| Avyrie   |         |       |        |
+| Dillon |         |       |        |
+| Hyrum |         |       |        |
+| Lydia |         |       |        |
+| Samuel |         |       |        |
