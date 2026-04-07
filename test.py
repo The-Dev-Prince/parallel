@@ -1,4 +1,6 @@
 import time
+from mergesort import pmerge
+from MergeSortRegular import merge_sort
 
 # Array builder/splitter
 # Asks for which .txt file to grab from texts folder
@@ -14,7 +16,7 @@ for word in pre_words:
     word_array.append(cleaned)
 
 print(word_array)
-
+test_array = word_array
 def word_count(word_array):
     count = 0
     for word in word_array:
@@ -25,7 +27,7 @@ def comparision(text):
     print("Running Merge Sort Algorithms...")
     #Run Regular Merge
     startTime = time.time()
-    merge(text)
+    merge_sort(text)
     endTime = time.time()
     RegularMergeTime = endTime - startTime
 
@@ -36,3 +38,7 @@ def comparision(text):
     ParallelMergeTime = endTime - startTime
 
     print(f"Regular Merge Sort Time: {RegularMergeTime}\n Parallel Merge Sort Time: {ParallelMergeTime}")
+
+comparision(test_array)
+
+
