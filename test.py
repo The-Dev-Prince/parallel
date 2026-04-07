@@ -23,7 +23,7 @@ def word_count(word_array):
         count += 1
     return count
 
-def comparision(text):
+def comparison(text):
     print("Running Merge Sort Algorithms...")
     #Run Regular Merge
     startTime = time.time()
@@ -39,6 +39,6 @@ def comparision(text):
 
     print(f"Regular Merge Sort Time: {RegularMergeTime}\n Parallel Merge Sort Time: {ParallelMergeTime}")
 
-comparision(test_array)
+comparison(test_array)
 
 
