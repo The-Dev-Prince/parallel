@@ -1,4 +1,5 @@
 
+
 # Array builder/splitter
 # Asks for which .txt file to grab from texts folder
 text_file = input("Enter name of text file: ")
