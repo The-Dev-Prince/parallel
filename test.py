@@ -3,23 +3,27 @@ from mergesort import pmerge
 from MergeSortRegular import merge_sort
 
 # Array builder/splitter
-# Asks for which .txt file to grab from texts folder
-text_file = input("Enter name of text file: ")
-file = open(f"texts/" + text_file, "r")
-book = file.read()
-# Splits the strings in the .txt file at spaces
-pre_words = book.split(" ")
-# Removes punctuation from the front and end of strings, cleaning up the words
-word_array = []
-for word in pre_words:
-    cleaned = word.strip('"!?.()')
-    word_array.append(cleaned)
+def array_builder():
+    # Asks for which .txt file to grab from texts folder
+    text_file = input("Enter name of text file: ")
+    file = open(f"texts/" + text_file, "r")
+    book = file.read()
+    # Splits the strings in the .txt file at spaces
+    pre_words = book.split(" ")
+    # Removes punctuation from the front and end of strings, cleaning up the words
+    word_array = []
+    for word in pre_words:
+        cleaned = word.strip('"!?.()')
+        word_array.append(cleaned)
+    return word_array
 
-print(word_array)
-test_array = word_array
-def word_count(word_array):
+# Calls array_builder function to create test array
+test_array = array_builder()
+
+
+def word_count(test_array):
     count = 0
-    for word in word_array:
+    for word in test_array:
         count += 1
     return count
 
