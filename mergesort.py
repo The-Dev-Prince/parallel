@@ -17,7 +17,7 @@ for word in pre_words:
 
 print(word_array)
 
-
+# Test
 
 def merge_sort(lst):
     return lst
