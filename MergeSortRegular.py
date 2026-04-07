@@ -28,6 +28,7 @@ def merge_sort(a_list):
             j = j + 1
             k = k + 1
     #print("Merging", a_list)
-
+    return a_list
 
 #testing git push...
+
