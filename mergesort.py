@@ -1,7 +1,7 @@
 # the main function
 
 from multiprocessing import Pool
-from MergeSortRegular import merge_sort
+from MergeSortRegular import merge_sort, merge
 
 
 def pmerge(lst, agents = 4):
@@ -21,8 +21,9 @@ def pmerge(lst, agents = 4):
         sorted_chunks = pool.map(merge_sort, chunks)
 
 
-    result = merge_sort(sorted_chunks)
-
+    result = sorted_chunks[0]
+    for chunk in sorted_chunks[1:]:
+        result = merge(result, chunk)
     return result
 
 
