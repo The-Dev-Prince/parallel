@@ -15,15 +15,16 @@ def array_builder():
     for word in pre_words:
         cleaned = word.strip('"!?.()')
         word_array.append(cleaned)
+
     return word_array
 
 # Calls array_builder function to create test array
 test_array = array_builder()
 
 
-def word_count(test_array):
+def word_count(text):
     count = 0
-    for word in test_array:
+    for word in text:
         count += 1
     return count
 
