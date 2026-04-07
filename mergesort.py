@@ -2,9 +2,6 @@
 
 from multiprocessing import Pool
 
-
-
-
 def merge_sort(lst):
     return lst
 
