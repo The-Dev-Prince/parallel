@@ -1,4 +1,4 @@
-
+import time
 
 # Array builder/splitter
 # Asks for which .txt file to grab from texts folder
@@ -21,5 +21,18 @@ def word_count(word_array):
         count += 1
     return count
 
-def comparision():
-    pass
+def comparision(text):
+    print("Running Merge Sort Algorithms...")
+    #Run Regular Merge
+    startTime = time.time()
+    merge(text)
+    endTime = time.time()
+    RegularMergeTime = endTime - startTime
+
+    #Run Parallel Merge
+    startTime = time.time()
+    pmerge(text)
+    endTime = time.time()
+    ParallelMergeTime = endTime - startTime
+
+    print(f"Regular Merge Sort Time: {RegularMergeTime}\n Parallel Merge Sort Time: {ParallelMergeTime}")
