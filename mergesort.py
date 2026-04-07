@@ -20,11 +20,10 @@ def pmerge(lst, agents = 4):
     with Pool(processes = agents) as pool:
         sorted_chunks = pool.map(merge_sort, chunks)
 
+    while len(sorted_chunks) > 1:
+        sorted_chunks = [merge_sort(sorted_chunks[i] + sorted_chunks[i + 1]) for i in range(0, len(sorted_chunks) - 1, 2)]
 
-    result = merge_sort(sorted_chunks)
-
-    return result
-
+    return sorted_chunks[0]
 
 if __name__ == "__main__":
     test = [8, 3, 1, 7, 0, 10, 2, 4]
