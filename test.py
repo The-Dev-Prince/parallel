@@ -13,3 +13,12 @@ for word in pre_words:
     word_array.append(cleaned)
 
 print(word_array)
+
+def word_count(word_array):
+    count = 0
+    for word in word_array:
+        count += 1
+    return count
+
+def comparision():
+    pass
