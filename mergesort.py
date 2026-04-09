@@ -25,6 +25,8 @@ def pmerge(lst, agents = 4):
 
     return sorted_chunks[0]
 
+
+# Testing pmerge
 if __name__ == "__main__":
     test = [8, 3, 1, 7, 0, 10, 2, 4]
     print(f"Original: {test}")

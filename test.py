@@ -21,13 +21,14 @@ def array_builder():
 # Calls array_builder function to create test array
 test_array = array_builder()
 
-
+# Function to count the amount of words that are within a text file
 def word_count(text):
     count = 0
     for word in text:
         count += 1
     return count
 
+# Function to compare the times between the regular merge sort and the parallel merge sort
 def comparison(text):
     print("Running Merge Sort Algorithms...")
     #Run Regular Merge
@@ -44,6 +45,6 @@ def comparison(text):
 
     print(f"Regular Merge Sort Time: {RegularMergeTime}\n Parallel Merge Sort Time: {ParallelMergeTime}")
 
-comparison(test_array)
+# comparison(test_array)
 
 
