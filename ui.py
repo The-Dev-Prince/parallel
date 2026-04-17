@@ -1,4 +1,5 @@
 from mergesort import pmerge
+from test import comparison, array_builder
 
 def main():
     while True:
@@ -20,12 +21,7 @@ def main():
             print('')
             filename = list(os.listdir("texts"))[int(text_file_selection) - 1]
             file = open(f"texts/{filename}", "r")
-            book = file.read()
-            pre_words = book.split(" ")
-            word_array = []
-            for word in pre_words:
-                cleaned = word.strip('"!?.()')
-                word_array.append(cleaned)
+            word_array = array_builder(file)
         
             sorted = pmerge(word_array)
 
@@ -60,7 +56,7 @@ def main():
                 continue
 
         elif choice == "2":
-            pass
+            comparison(word_array)
 
         elif choice == "3":
             break

@@ -3,10 +3,8 @@ from mergesort import pmerge
 from MergeSortRegular import merge_sort
 
 # Array builder/splitter
-def array_builder():
+def array_builder(file):
     # Asks for which .txt file to grab from texts folder
-    text_file = input("Enter name of text file: ")
-    file = open(f"texts/" + text_file, "r")
     book = file.read()
     # Splits the strings in the .txt file at spaces
     pre_words = book.split(" ")
@@ -19,7 +17,7 @@ def array_builder():
     return word_array
 
 # Calls array_builder function to create test array
-test_array = array_builder()
+# test_array = array_builder()
 
 # Function to count the amount of words that are within a text file
 def word_count(text):
