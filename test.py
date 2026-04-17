@@ -1,6 +1,7 @@
 import time
 from mergesort import pmerge
 from MergeSortRegular import merge_sort
+from collections import Counter
 
 # Array builder/splitter
 def array_builder(file):
@@ -20,11 +21,10 @@ def array_builder(file):
 # test_array = array_builder()
 
 # Function to count the amount of words that are within a text file
-def word_count(text):
-    count = 0
-    for word in text:
-        count += 1
-    return count
+def word_count(sorted):
+    word_counts = Counter(sorted)
+    for word, count in word_counts.items():
+        print(f"{word}: {count}")
 
 # Function to compare the times between the regular merge sort and the parallel merge sort
 def comparison(text):

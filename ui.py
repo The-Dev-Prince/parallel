@@ -1,5 +1,6 @@
+from collections import Counter
 from mergesort import pmerge
-from test import comparison, array_builder
+from test import comparison, array_builder, word_count
 
 def main():
     word_array = None
@@ -42,13 +43,9 @@ def main():
                     for word in sorted:
                         f.write(word + "\n")
             if choice == "3":
-                from collections import Counter
-                word_counts = Counter(sorted)
-                for word, count in word_counts.items():
-                    print(f"{word}: {count}")
+                word_count(sorted)
 
             if choice == "4":
-                from collections import Counter
                 word_counts = Counter(sorted)
                 with open(f"report_{filename}", "w") as f:
                     for word, count in word_counts.items():
