@@ -2,6 +2,8 @@ from mergesort import pmerge
 from test import comparison, array_builder
 
 def main():
+    word_array = None
+
     while True:
         print("Select from menu:")
         print("1. sort a file")
@@ -56,7 +58,22 @@ def main():
                 continue
 
         elif choice == "2":
-            comparison(word_array)
+            if word_array == None:
+                print("what file do you want to sort?")
+                print("Files in texts folder:")
+                import os
+                i = 1
+                for filename in os.listdir("texts"):
+                    print(f"{i}. {filename}")
+                    i += 1
+                text_file_selection = input("Enter number for text file: ")
+                print('')
+                filename = list(os.listdir("texts"))[int(text_file_selection) - 1]
+                file = open(f"texts/{filename}", "r")
+                word_array = array_builder(file)
+                comparison(word_array)
+            else:
+                comparison(word_array)
 
         elif choice == "3":
             break

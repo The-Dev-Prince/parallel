@@ -41,7 +41,7 @@ def comparison(text):
     endTime = time.time()
     ParallelMergeTime = endTime - startTime
 
-    print(f"Regular Merge Sort Time: {RegularMergeTime}\n Parallel Merge Sort Time: {ParallelMergeTime}")
+    print(f"Regular Merge Sort Time: {RegularMergeTime}\nParallel Merge Sort Time: {ParallelMergeTime}")
 
 # comparison(test_array)
 
